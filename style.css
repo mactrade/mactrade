@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html {
+    overflow-x:hidden;
+    scroll-behavior: smooth;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}   
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+
+.text_color {
+    color: #ff7070;
+}
+
+@keyframes move {
+    0% {transform: translateX();}
+    100% {transform: translateY(0);}
+}
+
+@keyframes appearance {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.adv_title.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
+}
+
+.chem_title.element-show {
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateY(0%);
+} 
+
+.text.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
+} 
+
+.advs.element-show {
+    transition: all 1s;
+    transform: translateY(0%);
+} 
+
+.sp_title.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
+}
+
+.ww.element-show {
+    transition: all 1s;
+    opacity: 1;
+    transform: translateX(0%);
+} 
+
+/* NAVIGATION */
+
+.hat a {
+    color: black;
+}
+
+.hat a:visited {
+    color: black;
+}
+.hat a:active {
+    color: black;
+}
+
+.hat {
+    position: sticky;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 75px;
+    background: #ffff;
+    z-index: 5;
+}
+
+.logo {
+    position: relative;
+    left: 16%;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 140px;
+    height: 60px;
+    background: url(images/Mactrade_LOGO.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translateY(-190%);
+    animation: move 0.4s forwards;
+}
+
+.tg {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    right: 16%;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: url(images/Telegram_logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translateY(-200%);
+    animation: move 2.2s forwards;
+}
+
+.nav {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 706px;
+    height: 22px;
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110.99%;
+    transition: 0.5s;
+}
+
+.a {
+    transform: translateY(-150%);
+    animation: move 1s forwards;
+}
+
+.b {
+    transform: translateY(-150%);
+    animation: move 1.4s forwards;
+}
+
+.c {
+    transform: translateY(-150%);
+    animation: move 1.8s forwards;
+}
+
+.d {
+    transform: translateY(-150%);
+    animation: move 2.2s forwards;
+}
+
+/* HEADER */
+
+header {
+    position: relative;
+}
+
+.slid {
+    position: relative;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.title {
+    position: relative;
+    top: 25%;
+    right: 850px;
+    display: inline;
+    color: #FF7070;
+    font-family: Montserrat;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110.99%;
+    transform: opacity(0);
+    animation: appearance 2s forwards;
+}
+
+.carousel__item {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 885px;
+    background-image: url(images/emptbg.png);
+    background-size: cover;
+}
+
+.item {
+    height: 60%;
+    position: relative;
+    bottom: 20%;
+    left: 350px;
+    z-index: 3;
+    -webkit-filter: drop-shadow(1px 4px 5px #000);
+    filter: drop-shadow( 0px 1px 6px 8px rgba(0, 0, 0, 0.25));
+    transform: translateX(-80%);
+    animation: move 1s forwards;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 1250px;
+    height: 1250px;
+    position: relative;
+    left: -300px;
+    bottom: 500px;
+    background: linear-gradient(221deg, #FF7070 25%, rgba(255, 0, 0, 0.00) 100%);
+    z-index: 2;
+    transform: translateX(-150%);
+    animation: move 1s forwards;
+}
+
+.subtitle {
+    width: 630px;
+    height: 187px;
+    color: #000;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110.99%;
+    position: relative;
+    right: 900px;
+    top: 200px;
+    transform: opacity(0);
+    animation: appearance 3s forwards;
+}
+
+.button {
+    position: relative;
+    right: 450px;
+    top: 20%;
+    width: 196px;
+    height: 57px;
+    border-radius: 28px;
+    background: #FF7070;
+    transition: .5s;
+    opacity: 0;
+    animation: appearance 3s forwards;
+}
+.button:hover {
+    transform: scale(1.06);
+}
+
+.button a {
+    position: relative;
+    top: 15px;
+    left: 25px;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110.99%;
+}
+
+/* BLOCK 1 */
+
+.chem_title {
+    width: 975px;
+    height: 107px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 40px;
+    color: #FF7070;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 400%;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110.99%;
+    text-align: center;
+    opacity: 0;
+}
+
+.chem_subtitle {
+    width: 987px;
+    height: 83px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110.99%;
+    text-align: center;
+}
+
+.text {
+    width: 955px;
+    height: 88px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110.99%;
+    text-align: center;
+    opacity: 0;
+}
+
+.img_contain {
+    display: flex;
+    justify-content: space-between;
+    height: 394px;
+    width: 1278px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 20px;
+}
+
+.chem_image1 {
+    background-image: url(images/porolon.png);
+    width: 33vw;
+}
+
+.chem_image2 {
+    background-image: url(images/equip.png);
+    width: 33vw;
+}
+
+.caption {
+    padding-left: 17px;
+    padding-top: 20px;
+    display: block;
+    position: relative;
+    top: 330px;
+    width: calc(100% - 20px);
+    height: 46px;
+    background: rgba(0, 0, 0, 0.44);
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: 1s;
+
+    &.is-active {
+        transform:translateY(-143%);
+        height: 210px;
+    }
+}
+
+/* ADVANTAGES */
+
+.advantages {
+    background: #eeee;
+    width: 100vw;
+    height: 1500px;
+}
+
+.advs {
+    position: relative;
+    top: 60px;
+    width: 66vw;
+    height: 252px;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(100%);
+}
+
+.adv_title {
+    position: relative;
+    width: 50%;
+    height: auto;
+    top: 53px;
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 200%;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110.99%;
+    opacity: 0;
+}
+
+
+.adv_name {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 170%;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110.99%;
+}
+
+.adv_cap {
+    display: flex;
+    width: 305px;
+    flex-direction: column;
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 150%;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110.99%;
+}
+
+/* SPHERES */
+
+.sp_title {
+    width: 630px;
+    height: 58px;
+    position: relative;
+    top: 170px;
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110.99%;
+    opacity: 0;
+}
+
+.spheres {
+    position: relative;
+    top: 170px;
+    width: 75%;
+    height: 450px;
+}
+
+.default_element, .tall_element, .wide_element {
+    background: url(images/porol.png);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 1290px;
+    align-content: space-between;
+    margin-bottom: 15px;
+}
+
+.default_element {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 208px;
+    flex: 1;
+}
+.default_cap {
+    padding: 15px 15px 0 0;
+    display: block;
+    position: relative;
+    left: -8px;
+    top: 158px;
+    width: calc(100% - 33px);
+    height: 35px;
+    background: rgba(0, 0, 0, 0.44);
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+    transition: 1s;
+
+    &.is-active {
+        transform:translateY(-100%);
+        height: 140px;
+    }
+    
+}
+
+
+.wide_element {
+    background-size: 630px auto;
+    background-repeat: no-repeat;
+    flex: 2;
+    height: 208px;
+}
+.wide_cap {
+    padding: 15px 15px 0 0;
+    display: block;
+    position: relative;
+    left: -8px;
+    top: 158px;
+    width: calc(100% - 30px);
+    height: 35px;
+    background: rgba(0, 0, 0, 0.44);
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+    transition: 1s;
+
+    &.is-active {
+        transform:translateY(-100%);
+        height: 140px;
+    }
+}
+
+
+
+/* WORKS WITH */
+
+.ww {
+    position: relative;
+    top: 200px;
+    background-color: white;
+    width: 66%;
+    height: 340px;
+    opacity: 0;
+}
+
+.ww_title {
+    position: relative;
+    top: 34px;
+    color: black;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110.99%;
+}
+
+.logos {
+    position: relative;
+    top: 50px;
+    width: 857px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logos img {
+    width: 193px;
+    height: 100px;
+}
+
+/* FOOTER */
+
+.map {
+    position: relative;
+    top: 50px;
+    width: 66%;
+    height: 600px;
+}
+
+footer div {
+    background-color: #eee;
+    width: 100%;
+    height: 200px;
+}
+
+footer div span {
+    position: relative;
+    left: 18%;
+    top: 50px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110.99%;
+}
